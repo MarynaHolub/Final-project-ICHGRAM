@@ -1,0 +1,18 @@
+.container {
+    padding: 28px 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.sidebar-icon {
+  fill: none;
+  stroke: #808080;
+  transition: fill 0.2s ease, stroke 0.2s ease;
+}
+
+.sidebar-link.active .sidebar-icon {
+  fill: black;
+  stroke: black;
+}

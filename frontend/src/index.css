@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+  --font-family:  "Roboto", sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 20px;
+  --font-size-xl: 28px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Layout
+  --container-width: 1200px;
+  --border-radius: 8px;
+  --border-radius-lg: 16px; */
+
+    /* Colors 
+  --color-primary: #2563eb;
+  --color-secondary: #64748b;
+  --color-background: #f8fafc;
+  --color-white: #ffffff;
+  --color-text: #151515;
+  --color-border: #e2e8f0;
+  --color-error: #ef4444;
+  --color-success: #22c55e; */
+
+  /* Effects 
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
