@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+}
+
+.link,
+.copyright {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--color-primary);
+}
+
+.copyright {
+  margin-top: 48px;
+  margin-bottom: 41px;
+  text-align: center;
+}
