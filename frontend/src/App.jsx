@@ -29,6 +29,7 @@ function App() {
 
         <Route element={<PrivateRoute />}>
           <Route element={<Layout />}>
+          {/* <Route path="/" element={<Layout />}> */}
             <Route path="/home" element={<Main />} />
             <Route path="/search" element={<Search />} />
             <Route path="/explore" element={<Explore />} />

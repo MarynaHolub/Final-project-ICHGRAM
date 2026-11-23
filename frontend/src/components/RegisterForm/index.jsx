@@ -2,6 +2,11 @@ import { fetchRegisterUser } from '../../redux/thunks/thunks';
 import styles from './RegisterForm.module.css';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
+import {
+  validateUsername,
+  validateEmail,
+  validatePassword,
+} from '../../utils/validation.js';
 
 function RegisterForm() {
   const dispatch = useDispatch();
@@ -27,6 +32,7 @@ function RegisterForm() {
         placeholder="Email"
         {...register('email', {
           required: 'Email is required',
+          validate: validateEmail,
         })}
       />
       {errors.email && <p className={styles.error}>{errors.email.message}</p>}
@@ -35,21 +41,24 @@ function RegisterForm() {
         className={styles.input}
         type="text"
         placeholder="Full Name"
-        {...register('fullName', {
-          required: 'Full Name is required',
-        })}
+        {...register('fullname')}
       />
-      {errors.fullName && <p className={styles.error}>{errors.fullName.message}</p>}
+      {errors.fullname && (
+        <p classnName={styles.error}>{errors.fullname.message}</p>
+      )}
 
       <input
         className={styles.input}
         type="text"
         placeholder="Userame"
-        {...register('userName', {
+        {...register('username', {
           required: 'Userame is required',
+          validate: validateUsername,
         })}
       />
-      {errors.userName && <p className={styles.error}>{errors.userName.message}</p>}
+      {errors.username && (
+        <p className={styles.error}>{errors.username.message}</p>
+      )}
 
       <input
         className={styles.input}
@@ -57,13 +66,12 @@ function RegisterForm() {
         placeholder="Password"
         {...register('password', {
           required: 'Password is required',
-          minLength: {
-            value: 6,
-            message: 'Minimum 6 characters',
-          },
+          validate: validatePassword,
         })}
       />
-      {errors.password && <p className={styles.error}>{errors.password.message}</p>}
+      {errors.password && (
+        <p className={styles.error}>{errors.password.message}</p>
+      )}
 
       <div className={styles.textContent}>
         <p className={styles.text}>

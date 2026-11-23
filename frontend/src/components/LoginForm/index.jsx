@@ -2,6 +2,7 @@ import { fetchLoginUser } from '../../redux/thunks/thunks';
 import styles from './LoginForm.module.css';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
+import { validateLogin, validatePassword } from '../../utils/validation.js';
 
 function LoginForm() {
   const dispatch = useDispatch();
@@ -27,10 +28,11 @@ function LoginForm() {
         placeholder="Username, or email"
         {...register('login', {
           required: 'Username, or email are required',
+          validate: validateLogin,
         })}
       />
 
-      {errors.login && <p>{errors.login.message}</p>}
+      {errors.login && <p className={styles.error}>{errors.login.message}</p>}
 
       <input
         className={styles.input}
@@ -38,14 +40,11 @@ function LoginForm() {
         placeholder="Password"
         {...register('password', {
           required: 'Password is required',
-          minLength: {
-            value: 6,
-            message: 'Minimum 6 characters',
-          },
+          validate: validatePassword,
         })}
       />
 
-      {errors.password && <p>{errors.password.message}</p>}
+      {errors.password && <p className={styles.error}>{errors.password.message}</p>}
 
       <button type="submit" className={styles.button}>Log in</button>
     </form>
