@@ -1,12 +1,14 @@
 import styles from './Login.module.css';
+import stylesCommon from '../../styles/common.module.css';
 import loginImage from '../../assets/img/logIn.png';
 import { NavLink } from 'react-router-dom';
 import LoginForm from '../../components/LoginForm';
 
 function Login() {
   return (
-    <div className={styles.login}>
-      <div className={styles.container}>
+    // <div className={`${styles.login} ${stylesCommon.container}`}>
+    <div className={stylesCommon.container}>
+      <div className={styles.wrapper}>
         <img src={loginImage} alt="login-image" className={styles.img} />
         <div className={styles.content}>
           <div className={styles.login}>
@@ -21,16 +23,14 @@ function Login() {
             <NavLink to="/forgot-password">
               <span className={styles.forgotPassword}>Forgot password?</span>
             </NavLink>
-
           </div>
-          
+
           <div className={styles.signUp}>
-            <p>Don't have an account? </p>
+            <p className={styles.signUpContent}>Don't have an account? </p>
             <NavLink to="/register">
-              <span>Sign up</span>
+              <p className={styles.signUpAsk}>Sign up</p>
             </NavLink>
           </div>
-
         </div>
       </div>
     </div>
