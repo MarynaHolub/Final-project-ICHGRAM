@@ -11,7 +11,7 @@ function Login() {
       <div className={styles.wrapper}>
         <img src={loginImage} alt="login-image" className={styles.img} />
         <div className={styles.content}>
-          <div className={styles.login}>
+          <div className={styles.firstBlock}>
             <NavLink to="/">
               <img src="/logo.svg" alt="logo" className={styles.logo} />
             </NavLink>
@@ -25,10 +25,10 @@ function Login() {
             </NavLink>
           </div>
 
-          <div className={styles.signUp}>
-            <p className={styles.signUpContent}>Don't have an account? </p>
+          <div className={styles.SecondBlock}>
+            <p className={styles.SecondBlockContent}>Don't have an account? </p>
             <NavLink to="/register">
-              <p className={styles.signUpAsk}>Sign up</p>
+              <p className={styles.SecondBlockAsk}>Sign up</p>
             </NavLink>
           </div>
         </div>

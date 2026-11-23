@@ -25,7 +25,7 @@
   gap: 10px;
   align-items: center;
 }
-.login {
+.firstBlock {
   padding: 0 40px;
   padding-bottom: 23px;
 
@@ -61,7 +61,7 @@
   color: #00376b;
 }
 
-.signUp {
+.SecondBlock {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -71,14 +71,14 @@
   border: 1px solid var(--color-secondary);
 }
 
-.signUpContent {
+.SecondBlockContent {
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
   text-align: center;
 }
 
-.signUpAsk {
+.SecondBlockAsk {
   font-weight: 600;
   font-size: 14px;
   line-height: 129%;
