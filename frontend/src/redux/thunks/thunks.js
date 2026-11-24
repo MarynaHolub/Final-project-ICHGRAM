@@ -25,3 +25,27 @@ export const fetchRegisterUser = createAsyncThunk(
     }
   },
 );
+
+export const fetchForgotPassword = createAsyncThunk(
+  'auth/fetchForgotPassword',
+  async (data, { rejectWithValue }) => {
+    try {
+      const response = await axios.post(`${API_URL}/forgot-password`, data);
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.response?.data?.message || 'Operation failed');
+    }
+  },
+);
+
+export const fetchResetPassword = createAsyncThunk(
+  'auth/fetchResetPassword',
+  async (data, { rejectWithValue }) => {
+    try {
+      const response = await axios.post(`${API_URL}/reset-password`, data);
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.response?.data?.message || 'Operation Reset failed');
+    }
+  },
+);

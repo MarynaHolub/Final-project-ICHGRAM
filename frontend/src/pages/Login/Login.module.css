@@ -1,9 +1,4 @@
 .wrapper {
-  /* width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px; */
-
   display: flex;
   justify-content: center;
   padding-top: 93px;
@@ -66,7 +61,7 @@
   justify-content: center;
   gap: 8px;
   padding: 23px 74px;
-  /* padding: 0 74px; */
+
 
   border: 1px solid var(--color-secondary);
 }

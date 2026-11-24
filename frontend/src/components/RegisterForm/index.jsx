@@ -76,11 +76,11 @@ function RegisterForm() {
       <div className={styles.textContent}>
         <p className={styles.text}>
           People who use our service may have uploaded your contact information
-          to Instagram.<span>Learn More</span>
+          to Instagram.<span className={styles.span}>Learn More</span>
         </p>
         <p className={styles.text}>
-          By signing up, you agree to our <span>Terms</span>,
-          <span>Privacy Policy</span> and <span>Cookies Policy</span>.
+          By signing up, you agree to our <span className={styles.span}>Terms</span>,
+          <span className={styles.span}>Privacy Policy</span> and <span className={styles.span}>Cookies Policy</span>.
         </p>
       </div>
 
