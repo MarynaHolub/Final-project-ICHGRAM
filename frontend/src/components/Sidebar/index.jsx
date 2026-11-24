@@ -123,6 +123,7 @@ function Sidebar() {
           )}
         </NavLink>
       </div>
+      <span className={styles.line}></span>
     </div>
   );
 }

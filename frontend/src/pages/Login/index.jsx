@@ -1,13 +1,12 @@
 import styles from './Login.module.css';
-import stylesCommon from '../../styles/common.module.css';
+
 import loginImage from '../../assets/img/logIn.png';
 import { NavLink } from 'react-router-dom';
 import LoginForm from '../../components/LoginForm';
 
 function Login() {
   return (
-    // <div className={`${styles.login} ${stylesCommon.container}`}>
-    <div className={stylesCommon.container}>
+    <div className="container">
       <div className={styles.wrapper}>
         <img src={loginImage} alt="login-image" className={styles.img} />
         <div className={styles.content}>

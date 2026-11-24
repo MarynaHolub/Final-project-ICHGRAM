@@ -1,6 +1,7 @@
 .wrapper {
   padding-top: 81px;
-  padding-bottom: 152px;
+ 
+  height: 100vh;
 }
 
 .logo {

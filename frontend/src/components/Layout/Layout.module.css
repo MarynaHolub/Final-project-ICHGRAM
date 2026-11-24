@@ -7,6 +7,8 @@
 .sidebar {
   width: 245px;
   flex-shrink: 0;
+  height: 100vh;
+  border-right: 2px solid var(--color-secondary);
 }
 
 .content {
