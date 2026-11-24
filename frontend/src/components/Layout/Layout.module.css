@@ -1,17 +1,21 @@
-.container {
+.layout {
+  min-height: 100vh;
   display: flex;
-  align-items: flex-start;
-  gap: 103px;
+  flex-direction: column;
 }
-
+.content {
+  display: flex;
+  flex: 1;  
+  /* Занимает свободное пространство */
+}
 .sidebar {
   width: 245px;
   flex-shrink: 0;
-  height: 100vh;
+
   border-right: 2px solid var(--color-secondary);
 }
 
-.content {
+.main {
   flex: 1;
   min-width: 0;
 }
