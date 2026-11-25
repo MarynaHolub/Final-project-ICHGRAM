@@ -1,0 +1,91 @@
+.profile {
+  display: flex;
+  gap: 86px;
+  margin-top: 38px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content,
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.headers {
+  display: flex;
+  /* gap: 20px; */
+  align-items: center;
+}
+.username {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 126%;
+  margin-right: 20px;
+}
+
+.editOrMessageBtn {
+  border-radius: 8px;
+  background: #efefef;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+  padding: 8px 64px;
+  border: none;
+  margin-left: 8px;
+}
+
+.followBtn {
+  border-radius: 8px;
+  background: #0095f6;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+  color: #fff;
+  padding: 7px 42px;
+  border: none;
+  cursor: pointer;
+}
+.counts {
+  display: flex;
+  gap: 120px;
+}
+.count {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 113%;
+}
+
+.bio {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+}
+
+.link::before {
+  content: ''; /* Обязательное свойство для работы псевдоэлемента */
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0; /* Чтобы иконка не сжималась, если текст длинный */
+  background-image: url('../../../assets/icons/iconLink.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 8px;
+}
+.link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  color: #00376b;
+}

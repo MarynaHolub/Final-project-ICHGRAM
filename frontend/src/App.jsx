@@ -15,6 +15,7 @@ import PublicRoute from './components/PublicRoute';
 // import PrivateRoute from './components/PrivateRoute';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
+import EditProfile from './pages/EditProfile';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/create" element={<Create />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/profile/edit" element={<EditProfile />} />
             <Route path="/profile/:id" element={<Profile />} />
           </Route>
         </Route>
