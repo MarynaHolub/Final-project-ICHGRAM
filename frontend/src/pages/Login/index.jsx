@@ -2,7 +2,7 @@ import styles from './Login.module.css';
 
 import loginImage from '../../assets/img/logIn.png';
 import { NavLink } from 'react-router-dom';
-import LoginForm from '../../components/LoginForm';
+import LoginForm from '../../components/Forms/LoginForm';
 
 function Login() {
   return (

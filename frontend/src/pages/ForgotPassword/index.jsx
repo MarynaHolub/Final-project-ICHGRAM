@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import styles from './ForgotPassword.module.css';
 import key from '../../assets/icons/key.svg';
 
-import ForgotPasswordForm from '../../components/ForgotPasswordForm';
+import ForgotPasswordForm from '../../components/Forms/ForgotPasswordForm';
 
 function ForgotPassword() {
   return (

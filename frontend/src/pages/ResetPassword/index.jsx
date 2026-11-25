@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import styles from './ResetPassword.module.css';
 import key from '../../assets/icons/key.svg';
 
-import ResetPasswordForm from '../../components/ResetPasswordForm';
+import ResetPasswordForm from '../../components/Forms/ResetPasswordForm';
 
 function ResetPassword() {
   return (

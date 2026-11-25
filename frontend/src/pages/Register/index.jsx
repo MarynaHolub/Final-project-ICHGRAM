@@ -1,7 +1,7 @@
 import styles from './Register.module.css';
 // import stylesCommon from '../../styles/common.module.css';
 import { NavLink } from 'react-router-dom';
-import RegisterForm from '../../components/RegisterForm';
+import RegisterForm from '../../components/Forms/RegisterForm';
 
 function Register() {
   return (

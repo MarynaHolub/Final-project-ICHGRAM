@@ -14,8 +14,8 @@ import CreateIcon from '../../assets/icons/create.svg?react';
 import ImageProfile from '../ImageProfile';
 import defaultIcon from '../../assets/icons/default-icon.svg';
 import { useState } from 'react';
-import SearchPanel from '../SearchPanel';
-import NotificationsPanel from '../NotificationsPanel';
+import SearchPanel from '../Panels/SearchPanel';
+import NotificationsPanel from '../Panels/NotificationsPanel';
 
 function Sidebar() {
   const [activePanel, setActivePanel] = useState(null);

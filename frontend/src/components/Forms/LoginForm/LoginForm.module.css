@@ -1,0 +1,36 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 268px;
+}
+
+.input {
+  padding: 10px 0;
+  padding-left: 8px;
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  width: 268px;
+
+  background: #fafafa;
+}
+
+.button {
+    width: 100%;
+  margin-top: 8px;
+  margin-bottom: 22px;
+  border-radius: 8px;
+  border: none;
+
+  background: #0095f6;
+  padding: 7px 113px;
+  color: white;
+}
+
+.error {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: #ff0014;
+}
