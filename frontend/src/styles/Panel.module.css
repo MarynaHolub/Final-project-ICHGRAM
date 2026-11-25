@@ -1,0 +1,42 @@
+.panel {
+  position: fixed;
+  top: 0;
+  left: 245px;
+
+  width: 397px;
+  /* height: 100vh; */
+  bottom: 158px;
+
+  background: #fff;
+  border-right: 1px solid #dbdbdb;
+  border-radius: 0 16px 16px 0;
+  /* box-shadow: 4px 0 24px rgba(0, 0, 0, 0.15); */
+  box-shadow: 4px 0 12px -4px rgba(0, 0, 0, 0.15);
+
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+
+  visibility: hidden;
+  pointer-events: none;
+
+  z-index: 100;
+}
+
+.open {
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 245px;
+  bottom: 158px;
+  width: calc(100% - 245px);
+ 
+
+  background: rgba(0, 0, 0, 0.35);
+
+  z-index: 99;
+}

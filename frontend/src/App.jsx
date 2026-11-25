@@ -27,11 +27,11 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
-          {/* </Route> */}
+        {/* </Route>
 
-          {/* <Route element={<PrivateRoute />}> */}
-          {/* <Route element={<Layout />}> */}
-          <Route path="/" element={<Layout />}>
+        <Route element={<PrivateRoute />}>
+          <Route element={<Layout />}> */}
+            <Route path="/" element={<Layout />}>
             <Route path="/home" element={<Main />} />
             <Route path="/search" element={<Search />} />
             <Route path="/explore" element={<Explore />} />
@@ -39,7 +39,7 @@ function App() {
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/create" element={<Create />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/profile:id" element={<Profile />} />
+            <Route path="/profile/:id" element={<Profile />} />
           </Route>
         </Route>
       </Routes>

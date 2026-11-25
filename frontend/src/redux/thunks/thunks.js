@@ -49,3 +49,15 @@ export const fetchResetPassword = createAsyncThunk(
     }
   },
 );
+
+export const fetchUsers = createAsyncThunk(
+  'auth/fetchResetPassword',
+  async (data, { rejectWithValue }) => {
+    try {
+      const response = await axios.post(`${API_URL}/reset-password`, data);
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.response?.data?.message || 'Operation Reset failed');
+    }
+  },
+);
